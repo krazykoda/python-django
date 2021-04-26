@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appone.apps.ApponeConfig',
+    'blog',
+    'account'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,9 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGOUT_REDIRECT_URL = 'blog'
+
+LOGIN_REDIRECT_URL = 'blog'
+
+REDIRECT_AUTHENTICATED_USER = True
